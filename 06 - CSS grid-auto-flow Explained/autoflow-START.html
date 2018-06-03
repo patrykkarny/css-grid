@@ -10,18 +10,23 @@
 
 <body>
   <div class="container">
-    <div class="item">1</div>
+    <div class="item item-1">1</div>
     <div class="item">2</div>
-    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
   </div>
 
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: 400px 200px;
-      grid-auto-columns: 100px;
-      grid-auto-flow: column;
+      grid-template: repeat(2, 100px) / 400px 200px;
+      /* grid-auto-columns: 100px; */
+      /* grid-auto-flow: column; */
     }
   </style>
 </body>
